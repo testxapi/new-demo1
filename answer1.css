@@ -1,0 +1,393 @@
+body {
+  color: #3b4043;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+div {
+  display: block;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+}
+div#wrapper {
+  position: relative;
+  opacity: 1;
+  min-height: 100vh;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+}
+div#hamburger {
+  width: 80px;
+  height: 80px;
+  background-color: #003176;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 21px;
+  margin: 29px 0 0 25px;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+a {
+  color: #707070;
+  text-decoration: none;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #98a6b6;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+header#header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 90px;
+  z-index: 99;
+}
+
+header#header ul#header-menu {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+}
+header#header ul#header-menu li {
+  font-size: 16px;
+  margin-left: 48px;
+}
+.fll {
+  float: left;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+header#header ul#header-menu li:nth-child(1) a {
+  display: block;
+  width: 25px;
+  height: 32px;
+}
+
+header#header ul#header-menu li:nth-child(2),
+header#header ul#header-menu li:nth-child(3) {
+  margin-top: 7px;
+}
+header#header ul#header-menu li a {
+  color: #707f89;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+header#header ul#header-menu li:nth-child(4) a {
+  background-color: #707f89;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 16px;
+}
+
+/* container */
+div#container {
+  margin: 0 auto;
+  padding-top: 90px;
+  font-size: 100%;
+}
+div.course-title {
+  background-color: #0047b4;
+  padding: 13px 0;
+  color: #fff;
+  width: 100%;
+}
+div.course-title a.level1 {
+  width: auto;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 57px;
+}
+div.course-title a {
+  display: block;
+  height: 26px;
+}
+.fll {
+  float: left;
+}
+a {
+  text-decoration: none;
+}
+section#checksheet-main {
+  width: calc(100%-60px);
+  padding: 53px 30px 40px;
+}
+section {
+  display: block;
+}
+div.checksheet-main-container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.checksheet-main-container h4 {
+  margin: auto;
+  line-height: 160%;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fs24 {
+  font-size: 24px;
+}
+.fll {
+  float: left;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+div.checksheet-main-container h4 span {
+  color: #fff;
+  background-color: #0047b4;
+  border-radius: 7px;
+  padding: 0 18px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.fs15 {
+  font-size: 15px;
+}
+div.checksheet-main-container h4 {
+  line-height: 160%;
+}
+.fw700 {
+  font-weight: 700;
+}
+.br-sp {
+  display: none;
+}
+p.movie-time {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  color: #98a6b5;
+  margin-top: 15px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.flr {
+  float: right;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+.area-question li {
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.area-question .question {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+  position: relative;
+}
+.area-question .question .number {
+  display: inline-block;
+  background: #0047b4;
+  border-radius: 50%;
+  padding: 1em 0.8em;
+  margin-right: 15px;
+  color: white;
+  text-align: center;
+}
+.area-question .question .first-half {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.area-question .answer {
+  padding: 10px 20px 20px;
+}
+.area-question .answer label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 0 5px 40px;
+  border-radius: 2px;
+  line-height: 130%;
+  width: 100%;
+}
+.area-question .answer label:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -10px;
+  width: 32px;
+  height: 32px;
+  margin-top: -15px;
+  background: #cdd6dd;
+  border-radius: 50%;
+  line-height: 1;
+}
+input[type="radio"]:checked + label:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 50%;
+  background: #0047b4;
+  line-height: 1;
+}
+section#checksheet-sub {
+  background-color: #f0f3f5;
+  padding: 40px 0 120px;
+}
+.tac {
+  text-align: center;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+section#checksheet-sub div.btn p.overimg {
+  display: block;
+  background-color: #0047b4;
+  border-radius: 7px;
+  color: #fff;
+  padding: 28px 0;
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer#footer {
+  padding: 25px 0;
+  background-color: #98a6b6;
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer {
+  display: block;
+}
+.lh160 {
+  line-height: 160%;
+}

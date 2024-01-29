@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./answer1.css" />
+  </head>
+  <body>
+    <div id="wrapper" style="opacity: 1">
+      <div id="hamburger" class="overimg">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <!-- header -->
+      <header id="header">
+        <nav>
+          <ul id="header-menu" class="clearfix">
+            <li class="fll">
+              <span><a class="overimg" href="/top"></a></span>
+            </li>
+            <li class="fll">
+              <span><a class="overimg" href="/categories">講座一覧</a></span>
+            </li>
+            <li class="fll">
+              <span
+                ><a class="overimg" href="/mypage" style="opacity: 1"
+                  >マイページ</a
+                ></span
+              >
+            </li>
+            <li class="fll">
+              <span
+                ><a
+                  data-confirm="ログアウトしますか？"
+                  class="overimg"
+                  rel="nofollow"
+                  data-method="post"
+                  href="/logout"
+                  style="opacity: 1"
+                  >ログアウト</a
+                ></span
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- container -->
+      <div id="container">
+        <div class="course-title clearfix">
+          <a class="fll overimg level1" href="/videos/14">Jim Goes Fishing</a>
+        </div>
+        <section id="checksheet-main">
+          <div class="checksheet-main-container">
+            <div class="clearfix mb30">
+              <h4 class="fw700 fs24 fll">
+                <span class="fs15">チャプター1</span> <br class="br-sp" />Jim
+                Goes Fishing
+              </h4>
+              <p class="movie-time fs14 flr">1分</p>
+            </div>
+
+            <form
+              action="/checksheets#post-anchor"
+              accept-charset="UTF-8"
+              method="post"
+            >
+              <input name="utf8" type="hidden" value="✓" /><input
+                type="hidden"
+                name="authenticity_token"
+                value="1Yr5feZjFS6ZNbkDxX7khhZhq16CDMgPsLGcHCubCYp1AplGlagQnztULIf91WLwn5rgX9wTCrdfUiyP8xH8FQ=="
+              />
+              <ol class="area-question">
+                <li>
+                  <dl>
+                    <dt class="question">
+                      <p class="number">Q1</p>
+                      <p class="first-half" style="width: 832px">
+                        お父さんはジムに何を持ってきなさいと言いましたか？
+                      </p>
+                    </dt>
+                    <dd class="answer">
+                      <input
+                        type="radio"
+                        name="answer[radio0]"
+                        id="select0_1"
+                        value="1"
+                      />
+                      <label for="select0_1">Fishing rods</label>
+                      <input
+                        type="radio"
+                        name="answer[radio0]"
+                        id="select0_2"
+                        value="2"
+                      />
+                      <label for="select0_2">Cooler</label>
+                      <input
+                        type="radio"
+                        name="answer[radio0]"
+                        id="select0_3"
+                        value="3"
+                      />
+                      <label for="select0_3">Caps</label>
+                      <input
+                        type="radio"
+                        name="answer[radio0]"
+                        id="select0_4"
+                        value="4"
+                      />
+                      <label for="select0_4">Jakets</label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="question">
+                      <p class="number">Q2</p>
+                      <p class="first-half" style="width: 832px">
+                        のどが乾いたジムは何を飲みましたか？
+                      </p>
+                    </dt>
+                    <dd class="answer">
+                      <input
+                        type="radio"
+                        name="answer[radio1]"
+                        id="select1_1"
+                        value="1"
+                      />
+                      <label for="select1_1">Water</label>
+                      <input
+                        type="radio"
+                        name="answer[radio1]"
+                        id="select1_2"
+                        value="2"
+                      />
+                      <label for="select1_2">Apple juice</label>
+                      <input
+                        type="radio"
+                        name="answer[radio1]"
+                        id="select1_3"
+                        value="3"
+                      />
+                      <label for="select1_3">Coke</label>
+                      <input
+                        type="radio"
+                        name="answer[radio1]"
+                        id="select1_4"
+                        value="4"
+                      />
+                      <label for="select1_4">Oolong tea</label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="question">
+                      <p class="number">Q3</p>
+                      <p class="first-half" style="width: 832px">
+                        おなかがすいたジムはなにを食べましたか？
+                      </p>
+                    </dt>
+                    <dd class="answer">
+                      <input
+                        type="radio"
+                        name="answer[radio2]"
+                        id="select2_1"
+                        value="1"
+                      />
+                      <label for="select2_1">Apple</label>
+                      <input
+                        type="radio"
+                        name="answer[radio2]"
+                        id="select2_2"
+                        value="2"
+                      />
+                      <label for="select2_2">Orange</label>
+                      <input
+                        type="radio"
+                        name="answer[radio2]"
+                        id="select2_3"
+                        value="3"
+                      />
+                      <label for="select2_3">Chocolate</label>
+                      <input
+                        type="radio"
+                        name="answer[radio2]"
+                        id="select2_4"
+                        value="4"
+                      />
+                      <label for="select2_4">Canele</label>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="question">
+                      <p class="number">Q4</p>
+                      <p class="first-half" style="width: 832px">
+                        ジムがつりあげたものはなんでしたか？
+                      </p>
+                    </dt>
+                    <dd class="answer">
+                      <input
+                        type="radio"
+                        name="answer[radio3]"
+                        id="select3_1"
+                        value="1"
+                      />
+                      <label for="select3_1">Octopus</label>
+                      <input
+                        type="radio"
+                        name="answer[radio3]"
+                        id="select3_2"
+                        value="2"
+                      />
+                      <label for="select3_2">Boots</label>
+                      <input
+                        type="radio"
+                        name="answer[radio3]"
+                        id="select3_3"
+                        value="3"
+                      />
+                      <label for="select3_3">Squid</label>
+                      <input
+                        type="radio"
+                        name="answer[radio3]"
+                        id="select3_4"
+                        value="4"
+                      />
+                      <label for="select3_4">Lobster</label>
+                    </dd>
+                  </dl>
+                </li>
+                <div class="field">
+                  <input
+                    type="hidden"
+                    name="chapter_number"
+                    id="chapter_number"
+                    value="2"
+                  />
+                  <input
+                    type="hidden"
+                    name="video_id"
+                    id="video_id"
+                    value="14"
+                  />
+                </div>
+              </ol>
+            </form>
+          </div>
+        </section>
+        <section id="checksheet-sub">
+          <div class="actions, btn fw700 tac">
+            <div class="submit-disable">
+              <p class="overimg" style="opacity: 1">送信済み</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /container -->
+      <footer id="footer">
+        <p class="tac lh160">
+          © Institute for Educational Research <br class="br-sp" />All Rights
+          Reserved.
+        </p>
+      </footer>
+      <script src="https://unpkg.com/@xapi/xapi"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+      <script src="./answer1.js"></script>
+    </div>
+  </body>
+</html>

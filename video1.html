@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jim Goes Fishing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./video1.css" />
+  </head>
+  <body>
+    <div id="wrapper" style="opacity: 1">
+      <div id="hamburger" class="overimg">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <!-- header -->
+      <header id="header">
+        <nav>
+          <ul id="header-menu" class="clearfix">
+            <li class="fll">
+              <span
+                ><a class="overimg" href="/top" style="opacity: 1">.</a></span
+              >
+            </li>
+            <li class="fll">
+              <span
+                ><a class="overimg" href="/categories" style="opacity: 1"
+                  >講座一覧</a
+                ></span
+              >
+            </li>
+            <li class="fll">
+              <span
+                ><a class="overimg" href="/mypage" style="opacity: 1"
+                  >マイページ</a
+                ></span
+              >
+            </li>
+            <li class="fll">
+              <span
+                ><a
+                  data-confirm="ログアウトしますか？"
+                  class="overimg"
+                  rel="nofollow"
+                  data-method="post"
+                  href="/logout"
+                  style="opacity: 1"
+                  >ログアウト</a
+                ></span
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- container -->
+      <div id="container">
+        <section id="chapter-movie">
+          <div class="movie-youtube">
+            <video
+              preload="auto"
+              id="my-video_html5_api"
+              oncontextmenu="return false;"
+              class="vjs-tech"
+              data-setup="{}"
+              controls
+            >
+              <source
+                src="https://s3-ap-northeast-1.amazonaws.com/elearningapp-s3/var/www/rails_for_nara/elearning-assessment/public/videos/videofiles/14/original_Story05_Jim_Goes_Fishing.mp4?1639452571"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </section>
+        <div class="course-title clearfix">
+          <a
+            class="fll overimg level1"
+            href="/categories/34/videos"
+            style="opacity: 1"
+            >英語アニメーション</a
+          >
+        </div>
+        <section id="course-detail-main">
+          <div class="course-detail-main-container">
+            <h4 class="fw700 fs24">
+              <span class="fs15">チャプター1</span> <br class="br-sp" />Jim Goes
+              Fishing
+            </h4>
+            <p>ジムはお父さんと魚釣りに行くようです。</p>
+          </div>
+          <div class="course-detail-support-container">
+            <h4 class="mb20">今回この講座には補助教材はありません。</h4>
+          </div>
+        </section>
+
+        <section id="course-detail-second">
+          <div class="course-detail-main-container">
+            <h2 class="fs24 fw700 tac mb50">研修の進め方</h2>
+
+            <div class="wizard small row ng-cloak mb50">
+              <a class="selected">動画の視聴</a><a>チェックシート</a
+              ><a>アンケート</a>
+            </div>
+
+            <p class="lh160 fs16 fcg">
+              動画を最後まで視聴した後、チェックシートに進んでください。チェック内容がすべて適切ならば、このチャプターは終了です。未記入箇所があった場合やチェック内容が適切でない箇所があった場合は、チャプターを終了することができず、次へ進むことはできません。「動画視聴ページに戻る」ボタンをクリックし、動画を視聴するか、チェックシートをもう一度やり直してください。
+            </p>
+
+            <hr class="mt40 mb40" />
+
+            <div class="btn tac fw700">
+              <a class="overimg" href="./answer1.html">チェックシートへ</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /container -->
+      <footer id="footer">
+        <p class="tac lh160">
+          © Institute for Educational Research <br class="br-sp" />All Rights
+          Reserved.
+        </p>
+      </footer>
+
+      <script src="https://unpkg.com/@xapi/xapi"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+      <script src="./video1.js"></script>
+    </div>
+  </body>
+</html>

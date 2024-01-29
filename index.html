@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div id="wrapper" style="opacity: 1; overflow: visible">
+      <div id="hamburger" class="overimg">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <header id="header">
+        <nav>
+          <ul id="header-menu" class="clearfix">
+            <li class="fll">
+              <span><a class="overimg" href="/top"></a></span>
+            </li>
+            <li class="fll">
+              <span><a class="overimg" href="/categories">講座一覧</a></span>
+            </li>
+            <li class="fll">
+              <span><a class="overimg" href="/mypage">マイページ</a></span>
+            </li>
+            <li class="fll">
+              <span
+                ><a
+                  data-confirm="ログアウトしますか？"
+                  class="overimg"
+                  rel="nofollow"
+                  data-method="post"
+                  href="/logout"
+                  >ログアウト</a
+                ></span
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="container">
+        <div class="course-title clearfix">
+          <a href="#" class="fll overimg"></a>
+          <p class="fll fs13 course-category course-category-ondemand">
+            オンデマンド
+          </p>
+          <h2 class="fll">初任者研修講座</h2>
+        </div>
+        <section id="course-detail-main">
+          <div class="course-detail-main-container">
+            <h3 class="section-title-line">英語アニメーション</h3>
+            <hr class="section-title-line-hr" />
+            <p class="lh180 mb40">アニメを見て質問に答えましょう</p>
+            <div class="btn">
+              <button id="btn-open">学習目的の確認とセルフチェック</button>
+            </div>
+            <div id="modal-container">
+              <div
+                id="self-check"
+                style="display: inline-block; width: 95%; max-width: 1060px"
+                class="fancybox-content"
+              >
+                <div class="clearfix">
+                  <h2 class="fs24 fw700 fll">初任者研修講座</h2>
+                  <div
+                    id="btn-close"
+                    class="btn-close flr overimg"
+                    data-fancybox-close=""
+                    style="opacity: 1"
+                  >
+                    <span class="br-pc">とじる</span>
+                  </div>
+                </div>
+                <hr class="mt25 mb25" />
+                <p class="lh180 detail mb25">
+                  研修での学習目標を確認して、現時点での自己評価を入力しましょう。<br />
+                  研修終了後にも評価を更新して、不安があるところなど確認してさらなる学びにつなげてください。
+                </p>
+                <div class="self-check-title clearfix">
+                  <p class="fll fs13 course-category course-category-ondemand">
+                    オンデマンド
+                  </p>
+                  <h2 class="fll lh160">英語アニメーション</h2>
+                </div>
+                <div class="rador-chart clearfix mb30">
+                  <div class="fll">
+                    <div class="chartjs-size-monitor">
+                      <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                      </div>
+                      <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                      </div>
+                    </div>
+                    <canvas
+                      id="myChart"
+                      width="356"
+                      height="356"
+                      class="chartjs-render-monitor"
+                      style="display: block; height: 285px; width: 285px"
+                    ></canvas>
+                  </div>
+                  <div class="flr">
+                    <h4 class="lh160 mb20 q1">英語のリスニングができる</h4>
+                    <div class="radio-list fs30 fw700 mb30">
+                      1 　<input
+                        type="radio"
+                        id="button-1-1"
+                        name="radio1"
+                        class="199"
+                        value="1"
+                      /><label for="button-1-1">
+                        　<input
+                          type="radio"
+                          id="button-1-2"
+                          name="radio1"
+                          class="199"
+                          value="2"
+                        /><label for="button-1-2">
+                          　<input
+                            type="radio"
+                            id="button-1-3"
+                            name="radio1"
+                            class="199"
+                            value="3"
+                            checked=""
+                          /><label for="button-1-3">
+                            　<input
+                              type="radio"
+                              id="button-1-4"
+                              name="radio1"
+                              class="199"
+                              value="4"
+                            /><label for="button-1-4">
+                              　<input
+                                type="radio"
+                                id="button-1-5"
+                                name="radio1"
+                                class="199"
+                                value="5"
+                              /><label for="button-1-5"> 　5 </label></label
+                            ></label
+                          ></label
+                        ></label
+                      >
+                    </div>
+                    <h4 class="lh160 mb20 q2">英語でアニメの状況がわかる</h4>
+                    <div class="radio-list fs30 fw700 mb30">
+                      1 　<input
+                        type="radio"
+                        id="button-2-1"
+                        name="radio2"
+                        class="200"
+                        value="1"
+                      /><label for="button-2-1">
+                        　<input
+                          type="radio"
+                          id="button-2-2"
+                          name="radio2"
+                          class="200"
+                          value="2"
+                        /><label for="button-2-2">
+                          　<input
+                            type="radio"
+                            id="button-2-3"
+                            name="radio2"
+                            class="200"
+                            value="3"
+                          /><label for="button-2-3">
+                            　<input
+                              type="radio"
+                              id="button-2-4"
+                              name="radio2"
+                              class="200"
+                              value="4"
+                              checked=""
+                            /><label for="button-2-4">
+                              　<input
+                                type="radio"
+                                id="button-2-5"
+                                name="radio2"
+                                class="200"
+                                value="5"
+                              /><label for="button-2-5"> 　5 </label></label
+                            ></label
+                          ></label
+                        ></label
+                      >
+                    </div>
+                    <h4 class="lh160 mb20 q3">英語でアニメのことを話せる</h4>
+                    <div class="radio-list fs30 fw700 mb30">
+                      1 　<input
+                        type="radio"
+                        id="button-3-1"
+                        name="radio3"
+                        class="201"
+                        value="1"
+                      /><label for="button-3-1">
+                        　<input
+                          type="radio"
+                          id="button-3-2"
+                          name="radio3"
+                          class="201"
+                          value="2"
+                        /><label for="button-3-2">
+                          　<input
+                            type="radio"
+                            id="button-3-3"
+                            name="radio3"
+                            class="201"
+                            value="3"
+                          /><label for="button-3-3">
+                            　<input
+                              type="radio"
+                              id="button-3-4"
+                              name="radio3"
+                              class="201"
+                              value="4"
+                              checked=""
+                            /><label for="button-3-4">
+                              　<input
+                                type="radio"
+                                id="button-3-5"
+                                name="radio3"
+                                class="201"
+                                value="5"
+                              /><label for="button-3-5"> 　5 </label>
+                            </label></label
+                          ></label
+                        ></label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="course-detail-second">
+          <div class="course-detail-main-container">
+            <div class="asl">
+              <h4 class="fw700 fs24">
+                <span class="fs15">チャプター1</span> <br class="br-sp" />Jim
+                Goes Fishing
+              </h4>
+              <div class="chapter-box clearfix">
+                <div class="fll">
+                  <div class="movie-youtube mb10">
+                    <iframe
+                      width="640"
+                      height="360"
+                      src="./chap1.png"
+                      frameborder="0"
+                      allowfullscreen=""
+                    ></iframe>
+                    <p class="movie-time fs14">1分1秒</p>
+                  </div>
+                </div>
+                <div class="flr">
+                  <p>ジムはお父さんと魚釣りに行くようです。</p>
+                </div>
+              </div>
+              <a href="./video1.html"></a>
+            </div>
+            <div class="asl">
+              <h4 class="fw700 fs24">
+                <span class="fs15">チャプター2</span> <br class="br-sp" />We
+                like picnics
+              </h4>
+              <div class="chapter-box clearfix">
+                <div class="fll">
+                  <div class="movie-youtube mb10">
+                    <iframe
+                      width="640"
+                      height="360"
+                      src="./chap2.png"
+                      frameborder="0"
+                      allowfullscreen=""
+                    ></iframe>
+                    <p class="movie-time fs14">1分0秒</p>
+                  </div>
+                </div>
+                <div class="flr">
+                  <p>クラスメイトでピクニックにいったようです。</p>
+                </div>
+              </div>
+              <a href="#"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer id="footer">
+        <p class="tac lh160">
+          © Institute for Educational Research <br class="br-sp" />All Rights
+          Reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/@xapi/xapi"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
